@@ -1,0 +1,27 @@
+name: GitHub Profile Summary Cards
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: github-profile-summary-cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        with:
+          USERNAME: alaa-dev20
+          
+      - name: Commit & Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -am "Update profile summary cards" || exit 0
+          git push
