@@ -14,7 +14,7 @@ Passionné par le développement web et la programmation.
 - [Nom du projet 2](lien) : description courte
 
 ## 📫 Contact
-- LinkedIn : https://www.linkedin.com/in/alaa-elfaresse-99176237b
+- LinkedIn : https://www.linkedin.com/in/alaa-el-faresse-99176237b/
 - Email : elfaressealaa04@gmail.com
 
 ## 🎯 Objectif
